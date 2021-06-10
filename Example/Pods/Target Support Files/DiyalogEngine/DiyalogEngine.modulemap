@@ -1,0 +1,6 @@
+framework module DiyalogEngine {
+  umbrella header "DiyalogEngine-umbrella.h"
+
+  export *
+  module * { export * }
+}
