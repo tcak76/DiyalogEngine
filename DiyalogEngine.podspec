@@ -29,8 +29,9 @@ Pod::Spec.new do |s|
       rm DiyalogEngine.zip
     CMD
 
-  #s.preserve_paths = 'Diyalog'
-
+  s.preserve_paths = 'DiyalogEngine'
+  s.vendored_frameworks =  'DiyalogEngine/ActorSDK.framework'
+  
   s.xcconfig = {
      "SWIFT_INCLUDE_PATHS" => "$(PROJECT_DIR)/Pods/DiyalogEngine",
      "FRAMEWORK_SEARCH_PATHS" => "$(PROJECT_DIR)/Pods/DiyalogEngine"
