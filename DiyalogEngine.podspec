@@ -15,16 +15,16 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Diyalog' => 'diyalog-im@users.noreply.github.com' }
   s.source           = { :git => 'https://github.com/tcak76/DiyalogEngine.git', :tag => s.version.to_s }
+  s.source_files     = "DiyalogEngine/**/*.{h,m,swift}"
 
   s.ios.deployment_target = '10.0'
 
   s.prepare_command = <<-CMD
       echo 'fetching DiyalogEngine.framework'
       curl -OL 'https://diyalog.im/app/pkgs/ios_frameworks/xcode12.5/DiyalogEngine/4.4.1/DiyalogEngine.zip'
+      rm -fr 'DiyalogEngine.framework'
       echo 'unzipping DiyalogEngine.framework'
       unzip -o -q DiyalogEngine.zip
-      echo 'copying DiyalogEngine.framework to Frameworks'
-      rm -fr 'DiyalogEngine.framework'
       echo 'cleaning files'
       rm DiyalogEngine.zip
     CMD
