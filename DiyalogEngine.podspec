@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/tcak76/DiyalogEngine'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'tcak76' => 'tcak76@users.noreply.github.com' }
+  s.author           = { 'Diyalog' => 'diyalog-im@users.noreply.github.com' }
   s.source           = { :git => 'https://github.com/tcak76/DiyalogEngine.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
