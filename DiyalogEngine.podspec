@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.prepare_command = <<-CMD
       echo 'fetching DiyalogEngine.framework'
-      curl -OL 'https://diyalog.im/app/pkgs/ios_frameworks/xcode12.5/DiyalogEngine/4.4.1/DiyalogEngine.zip'
+      curl -OL 'https://diyalog.im/app/pkgs/ios_frameworks/DiyalogEngine/4.4.1/DiyalogEngine.zip'
       rm -fr 'DiyalogEngine.framework'
       echo 'unzipping DiyalogEngine.framework'
       unzip -o -q DiyalogEngine.zip
