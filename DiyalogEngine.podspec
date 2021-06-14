@@ -15,7 +15,8 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Diyalog' => 'diyalog-im@users.noreply.github.com' }
   s.source           = { :git => 'https://github.com/tcak76/DiyalogEngine.git', :tag => s.version.to_s }
-  s.source_files     = "DiyalogEngine/**/*.{h,m,swift}"
+  s.public_header_files = "DiyalogEngine/DiyalogEngine.framework/Headers/*.h"
+  s.source_files     = "DiyalogEngine/DiyalogEngine.framework/Headers/*.h"
 
   s.ios.deployment_target = '10.0'
 

@@ -16,7 +16,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 Simply add the following line to your Podfile:
 
 ```ruby
-pod 'DiyalogEngine', :git => 'https://github.com/tcak76/DiyalogEngine.git'
+pod 'DiyalogEngine', :git => 'https://github.com/tcak76/DiyalogEngine.git', :tag => '<version no>'
 ```
 
 ## Author
