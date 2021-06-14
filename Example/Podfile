@@ -1,6 +1,0 @@
-use_frameworks!
-target 'DiyalogEngine_Tests' do
-  pod 'DiyalogEngine', :path => '../'
-  
-  
-end
