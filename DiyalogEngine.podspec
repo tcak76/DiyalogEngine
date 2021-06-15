@@ -34,9 +34,10 @@ Pod::Spec.new do |s|
   s.vendored_frameworks =  'DiyalogEngine.framework'
   
   s.xcconfig = {
-     "SWIFT_INCLUDE_PATHS" => "$(PROJECT_DIR)/Pods/DiyalogEngine",
-     "FRAMEWORK_SEARCH_PATHS" => "$(PROJECT_DIR)/Pods/DiyalogEngine",
-     "HEADER_SEARCH_PATHS" => "$(PROJECT_DIR)/Pods/**"
+     "SWIFT_INCLUDE_PATHS" => "${PODS_ROOT}/DiyalogEngine"
+     "FRAMEWORK_SEARCH_PATHS" => "${PODS_ROOT}/DiyalogEngine",
+     "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/DiyalogEngine"
+	
   }
   
 end
